@@ -2,13 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechNova - Innovative Tech Products</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>This is my Ejs page which I want to host</h1>
-    <h2><%= title%></h2>
-    <h2><%= message%></h2>
-    <h2>Now my project is deployed</h2>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>TechNova</h1>
+        <p>Innovative Technology for a Smarter Tomorrow</p>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Tech Product" style="width:100%;max-width:600px;">
+            <h2>Welcome to TechNova</h2>
+            <p>Discover our latest range of smart devices and cutting-edge solutions.</p>
+        </section>
+
+        <section id="features">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Smartphone">
+                    <h3>NovaPhone X</h3>
+                    <p>Experience the next generation smartphone with AI-powered features.</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Smartwatch">
+                    <h3>NovaWatch</h3>
+                    <p>Stay connected and healthy with our advanced smartwatch.</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Laptop">
+                    <h3>NovaBook Pro</h3>
+                    <p>Unleash productivity with our ultra-light, high-performance laptop.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <%= new Date().getFullYear() %> TechNova. All rights reserved.</p>
+    </footer>
 </body>
 </html>
